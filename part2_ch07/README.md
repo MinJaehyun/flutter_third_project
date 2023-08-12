@@ -1,16 +1,11 @@
-# part2_ch07
+### BottomNavigationBar
+![](assets/bottom_navigation_bar.png)
 
-A new Flutter project.
+### Navigator.push / pop / popUntil / pushAndRemoveUntil
+    1. Navigator.popUntil(context, (route) => route.isFirst)
+        - 처음으로 돌아온다
+    2. pushAndRemoveUntil
+        - 해당 페이지로 이동하지만, 돌아올 수 없다
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 외부 라이브러리인 go route 를 사용하는 방법
+    Named routing 설정하는 방식과 비슷하므로 이점 없으면 Named routing 사용하기
